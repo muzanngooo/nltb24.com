@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài asm 3
+    </title>
+    <style src="css">
+     </style>
+    
+    <link rel="stylesheet" href="css/laptop.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/tablet.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <div class="container1">
+      <img
+        src="hinh-anh-chup-sau-lung-boy-cuc-chat_033821480.jpg"
+        alt="anh"
+        style="width: 100%"
+        class="anh"
+      />
+      <div class="roboto-light">
+        <div class="centered">
+          <h1>NGUYỄN LÊ THIÊN BẢO</h1>
+          <p>Fullstack Deverloper</p>
+        </div>
+      </div>
+      <div class="topnav">
+        <div class="grid1">
+          <a href="#thongtin">
+            <p class="nav1">
+              <i
+                class="fa fa-user"
+                style="color: aqua"
+                ;
+                aria-hidden="true"
+              ></i>
+              Thông tin
+            </p>
+          </a>
+
+          <a href="#lylich">
+            <p class="nav1">
+              <i class="fa fa-file" style="color: aqua; "></i>
+              Lý lịch
+            </p>
+          </a>
+
+          <a href="#CV" id = "CV">
+            <p class="nav1">Nguyễn Lê Thiên Bảo</p>
+            <div class="seet">
+              <p class="nav1">Fullstack Deverloper</p>
+            </div>
+          </a>
+
+          <a href="#chungchi">
+            <p class="nav1">
+              <i class="fa fa-envelope-o" style="color: aqua"></i>
+              Chứng chỉ
+            </p>
+          </a>
+
+          <a href="#duan">
+            <p class="nav1">
+              <i class="material-icons" style="color: aqua">star</i>
+              Dự án
+            </p>
+          </a>
+        </div>
+      </div>
+      
+      <div class="grid2">
+        <div class="left">
+          <h1>MỤC TIÊU NGHỀ NGHIỆP</h1>
+          <p>
+            Là một sinh viên đã hoàn thành chương trình chứng chỉ Doanh Nghiệp
+            của FUNiX. Em mong muốn mình sẽ được làm việc với vị trí Fullstack
+            Developer, có thể vận dụng những kiến thức đã được trau dồi và không
+            ngừng học hỏi để phát triển bản thân, cũng như hoàn thành tốt nhất
+            công việc được giao.
+          </p>
+        </div>
+
+        <div id = "ps" class="sss">
+          <h1>THÔNG TIN CÁ NHÂN</h1>
+          <b><p>Ngày sinh</b> :24/11/2008</p>
+          <b><p>Số điện thoại</b> :0812004416</p>
+          <b><p>Địa chỉ</b> :Bình Dương, Việt Nam</p>
+          <b><p>Giới tính</b> :Nam</p>
+          <b><p>Email</b> :nguyenlethienbaortx@gmail.com</p>
+          </div>
+          <div class="submit-email" style="text-align: left">
+            <b><h1> Thông tin cá nhân </h1></b>
+            <input type="email" id="email">
+            <p class="error-email"></p>
+            
+            <h6 style="background-color: #ffd700;
+            padding: 5px 10px;
+            border-radius: 5px;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;"> Hãy nhập email để xác thực </h6>
+            <button type="button" style="display: block;" class="btn btn-submit btn-primary" id = "button">Submit</button>
+          </div>
+        </div>
+        
+      
+      
+      
+      
+     
+   
+      
+<div class="grid3">
+<div class="lineup">
+  <div class="grid4">
+    <h1>Kinh nghiệm</h1>
+      <i class="fa fa-briefcase" style="font-size:70px"></i>
+      
+    </div>
+    <div class="roboto">
+    <p class="p" >
+      
+        <p> 
+          <div id="content">
+        <div >
+          - Chưa có kinh nghiệm thực tế nhưng đã hoàn thành khóa học CS của
+      funix
+        </div>
+          
+        </div>
+        <br />
+        <div style="text-align: center; align-items: center;">
+          <button id = "btn2" class="btn btn-dark">View More</button>
+      <button id = "btn1" class="btn btn-dark">View less</button>
+        </div>
+    </p>
+    
+    
+    
+  </div>
+</div>
+<div class="lineup">
+  <div class="grid4">
+    <h1>Học vấn</h1>
+      <i class="fa fa-pencil" style="font-size:70px"></i>
+      
+    </div>
+    <div class="p" id = "b">
+      <h4 class="roboto">FUNIX</h4>
+      
+    </div>
+    <p >
+      
+         
+          <div id="content1">
+        <div >
+          <i><p class="roboto">06/2021-05/2021</p></i>
+      <p class="roboto">- Tốt nghiệp chứng chỉ doanh nghiệp nhánh Fullstack</p>
+      <p class="roboto">- GPA: 9/10</p>
+        </div>
+          
+        </div>
+        <br />
+        <div style="text-align: center; align-items: center;">
+          <button id = "btn4" class="btn btn-dark">View More</button>
+      <button id = "btn3" class="btn btn-dark">View less</button>
+        </div>
+    </p>
+        
+      
+
+    
+  
+  
+</div>
+<div class="lineup">
+  <div class="grid4">
+    <h1>Hoạt Động</h1>
+      <i class="fa fa-briefcase" style="font-size:70px"></i>
+
+      
+    </div>
+    
+    <p>
+      
+          <div id="content2">
+        <div class=" p">
+          <h4 class="roboto"> FPT Edu Hackaton 2019</h4>
+            <i class="roboto">03/2019-05/2019</i>
+            <p class="roboto">- Giải 3 bảng A</p>
+            <p class="roboto">- Đề tài: Trang wed về phân loại rác thải</p>
+            <h4 class="roboto"> Câu lạc bộ sinh viên IT</h4>
+            <i class="roboto">08/2018-08/2019</i>
+            <p class="roboto">- Trưởng ban chuyên môn</p>
+            <h4 class="roboto"> Câu lạc bộ văn hóa IT</h4>
+            <i class="roboto">08/2016</i>
+            <p class="roboto">- Hỗ trợ tổ chức tuần lễ văn hóa Việt Nam - Nhật Bản</p>
+        </div>
+          
+        </div>
+        <br />
+        <div style="text-align: center; align-items: center;">
+          <button id = "btn6" class="btn btn-dark">View More</button>
+      <button id = "btn5" class="btn btn-dark">View less</button>
+        </div>
+    </p>
+        
+      
+</div>
+<div class="lineup">
+  <div class="grid4">
+    <h1>Sở Thích</h1>
+    <i class="fa fa-briefcase" style="font-size:70px"></i>
+    
+  </div>
+  
+  <div class="grid5" id = "d">
+    
+  
+
+  </div>
+  <div >
+    
+      <p>
+        
+            <div id="content3">
+          <div class=" p">
+            <div class="grid5">
+              <div class="center" >
+                <i class="fa fa-mixcloud"></i>
+                
+          
+              </div>
+              <div class="center">
+                <i class="fa fa-gamepad"></i>
+          
+              </div>
+              <div class="center">
+                <i class="fa fa-umbrella"></i>
+          
+              </div>
+              <div class="center">
+                <i class="fa fa-american-sign-language-interpreting"></i>
+          
+              </div>
+              <p style="font-size: 12px;">Âm nhạc</p>
+              <p style="font-size: 12px;">Chơi Game</p>
+              <p style="font-size: 12px;">Du lịch</p>
+              <p style="font-size: 12px;">Nấu ăn</p>
+              
+            </div>
+          </div>
+            
+          </div>
+          <br />
+          <div style="text-align: center; align-items: center;">
+            <button id = "btn8" class="btn btn-dark">View More</button>
+        <button id = "btn7" class="btn btn-dark">View less</button>
+          </div>
+      </p>
+    
+  
+    
+  </div>
+</div>
+<div class="lineup">
+  <div class="grid4">
+    <h1>Ngôn ngữ</h1>
+    <i class="material-icons" style="font-size:70px">mic_none</i>
+  </div>
+  <div id = "e">
+    <div class="p" >
+      
+      
+    </div>
+  </div>
+  <p class="p" >
+    <p id = "a"></p>
+      <p>
+        <div id="content4">
+          
+            
+              <b><p>English - IETLS 7.0</p></b>
+          <div class="line">
+          </div>
+          <div class="line">
+          </div>
+          <div class="lineup2">
+          </div>
+          <b><p>JANPANESE - JLPT N4</p></b>
+          <div class="line">
+          </div>
+          <div class="lineup2">
+          </div>
+          <div class="lineup2">
+          </div>
+        </div>
+        
+          
+            
+            
+          
+          <br />
+          <div style="text-align: center; align-items: center;">
+            <button id = "btn10" class="btn btn-dark">View More</button>
+        <button id = "btn9" class="btn btn-dark">View less</button>
+          </div>
+        
+      
+    
+  </p>
+  <div >
+    
+    
+  </div>
+</div>
+
+<div class="lineup">
+  <div class="grid4">
+    <h1>Kỹ Năng</h1>
+    <i class="fa fa-gear" style="font-size:70px"></i>
+  </div>
+  
+  <p class="p" >
+    <p id = "a"></p>
+      <p>
+        <p> 
+          <div id="content5">
+        <div >
+          <p><b>HTML/CSS: Fundamental</b></p>
+            <p class="line"></p>
+            <p class="lineup2"></p>
+            <p class="lineup2"></p>
+            <p><b>Javascirpt: Intermediate</b></p>
+            <p class="line"></p>
+            <p class="line"></p>
+            <p class="lineup2"></p>
+        </div>
+          
+        </div>
+        <br />
+        <div style="text-align: center; align-items: center;">
+          <button id = "btn12" class="btn btn-dark">View More</button>
+      <button id = "btn11" class="btn btn-dark">View less</button>
+        </div>
+    </p>
+        
+      
+  
+</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+
+    
+
+
+  
+</div>
+
+<div>
+  <h1>Chứng chỉ - Giải thưởng</h1>
+  <p class="lineup"></p>
+</div>
+<div class="grid6">
+  
+  <div class="block2">
+    
+      <img src="cc-mon.webp" alt="Thẻ" width="200px" id ="x">
+  <div>
+    <p class="light">CHỨNG CHỈ LẬP TRÌNH WED - FUNIX</p>
+    <p class="light">- Chứng chỉ thuộc chương trình CCDN</p>
+    <p class="light">- GPA: 8.6</p>
+    
+  </div>
+    
+    
+  </div>
+  <div class="block2">
+    <img src="cc-mon.webp" alt="Thẻ" width="200px" id = "y">
+  <div >
+    <p class="light">CHỨNG CHỈ LẬP Javascirpt - FUNIX</p>
+    <p class="light">- Chứng chỉ thuộc chương trình CCDN</p>
+    <p class="light">- GPA: 8.9</p>
+  </div>
+  
+  <div>
+   
+    </div>
+   
+  </div>
+
+    
+  
+  
+  <div class="block2">
+    
+    
+      <img src="cc-mon.webp" alt="thẻ" width="200px" id="z">
+    
+    
+    
+      <div>
+        <p class="light">CHỨNG CHỈ THIẾT KẾ DATABASE - FUNIX</p>
+    <p class="light">- Chứng chỉ thuộc chương trình CCDN</p>
+    <p class="light">- GPA: 8.0</p>
+      </div>
+
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="container">
+  <div class="row">
+      <div class="col-md-4">
+          <div class="project">
+              <img src="1.png" alt="Project 1">
+              <div class="p-3">
+                  <h3>CV CÁ NHÂN</h3>
+                  <div class="project-details">
+                      <span class="year">2021</span>
+                      <span class="company">FUNiX</span>
+                      <span class="role">Developer</span>
+                  </div>
+                  <table>
+                      <tr>
+                          <th>Mô tả</th>
+                          <td>Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng như kỹ năng nghề nghiệp.</td>
+                      </tr>
+                      <tr>
+                          <th>Nhiệm vụ</th>
+                          <td>Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+                      </tr>
+                      <tr>
+                          <th>Công nghệ</th>
+                          <td>HTML, CSS</td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="project">
+              <img src="1.png" alt="Project 2">
+              <div class="p-3">
+                  <h3>TRANG WEB QUẢN LÝ THÚ CƯNG</h3>
+                  <div class="project-details">
+                      <span class="year">2021</span>
+                      <span class="company">FUNiX</span>
+                      <span class="role">Developer</span>
+                  </div>
+                  <table>
+                      <tr>
+                          <th>Mô tả</th>
+                          <td>Ứng dụng giúp quản lý các thông tin của thú cưng.</td>
+                      </tr>
+                      <tr>
+                          <th>Nhiệm vụ</th>
+                          <td>Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+                      </tr>
+                      <tr>
+                          <th>Công nghệ</th>
+                          <td>HTML, CSS, Javascript</td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-4">
+          <div class="project">
+              <img src="1.png" alt="Project 3">
+              <div class="p-3">
+                  <h3>TRANG WEB XEM TIN TỨC</h3>
+                  <div class="project-details">
+                      <span class="year">2021</span>
+                      <span class="company">FUNiX</span>
+                      <span class="role">Developer</span>
+                  </div>
+                  <table>
+                      <tr>
+                          <th>Mô tả</th>
+                          <td>Trang Web xem tin tức từ nhiều nguồn khác nhau, người dùng có thể tìm kiếm các tin tức dựa theo từ khóa.</td>
+                      </tr>
+                      <tr>
+                          <th>Nhiệm vụ</th>
+                          <td>Phát triển code - Review code - Tối ưu code - Xử lý lỗi</td>
+                      </tr>
+                      <tr>
+                          <th>Công nghệ</th>
+                          <td>HTML, CSS, Javascript</td>
+                      </tr>
+                  </table>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+  
+<script src="script.js"></script>    
+<footer style="background-color: black; text-align: center;">
+  <div style=" text-align: center; align-items: center; margin: 40px; display: inline-flex; ">
+  <div style="color: yellow;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="margin: 40px;" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+      <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+      </svg>
+      <p style="color: yellow; background-color: black; margin: 4px;">Facebook</p>
+  </div>
+    
+  <div style="color: yellow;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="margin: 40px;" fill="currentColor" class="bi bi-messenger" viewBox="0 0 16 16">
+      <path d="M0 7.76C0 3.301 3.493 0 8 0s8 3.301 8 7.76-3.493 7.76-8 7.76c-.81 0-1.586-.107-2.316-.307a.64.64 0 0 0-.427.03l-1.588.702a.64.64 0 0 1-.898-.566l-.044-1.423a.64.64 0 0 0-.215-.456C.956 12.108 0 10.092 0 7.76m5.546-1.459-2.35 3.728c-.225.358.214.761.551.506l2.525-1.916a.48.48 0 0 1 .578-.002l1.869 1.402a1.2 1.2 0 0 0 1.735-.32l2.35-3.728c.226-.358-.214-.761-.551-.506L9.728 7.381a.48.48 0 0 1-.578.002L7.281 5.98a1.2 1.2 0 0 0-1.735.32z"/>
+    </svg>
+    <p style="color: yellow; background-color: black; margin: 4px;">Messenger</p>
+  </div>
+    
+  <div style="color: yellow;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="margin: 40px;" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+      <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+    </svg>
+    <p style="color: yellow; background-color: black; margin: 4px;">Zalo</p>
+  </div>
+    
+  <div style="color: yellow;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" style="margin: 40px;" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+      <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+    </svg>
+    <p style="color: yellow; background-color: black; margin: 4px;">Instagram</p>
+  </div>
+    
+  
+  </div>
+</footer>
+
+
+  
+  
+
+  
+
+  
+  
+  
+</footer>
+</body>
+</html>
+    
